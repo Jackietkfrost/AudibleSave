@@ -2,11 +2,11 @@
   "name": "audible-save",
   "displayName": "Audible Save",
   "description": "Play an audio file when user saves.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "AMx2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/amx2/audible-save"
+    "url": "https://github.com/Jackietkfrost/AudibleSave"
   },
   "engines": {
     "vscode": "^1.91.0"
