@@ -1,0 +1,85 @@
+{
+  "name": "audible-save",
+  "displayName": "Audible Save",
+  "description": "Play an audio file when user saves.",
+  "version": "0.0.1",
+  "publisher": "AMx2",
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "audible-save.playAudio",
+        "shortTitle": "Play Audio",
+        "title": "Play Audio File"
+      },
+      {
+        "command": "audible-save.addAudio",
+        "shortTitle": "Add Audio",
+        "title": "Add Audio File"
+      }
+    ],
+    "configuration": {
+      "title": "Audible Save",
+      "properties": {
+        "audible-save.audioPath": {
+          "type": "string",
+          "default": "audio",
+          "description": "Path to audio files (Note: audio files must be in .wav format)"
+        },
+        "audible-save.audioFiles": {
+          "type": "string",
+          "enum": [
+            "that_was_easy.wav",
+            "peon-work-complete.wav",
+            "beep.wav",
+            "pop.wav"
+          ],
+          "enumItemLabels": [
+            "that_was_easy",
+            "peon-work-complete",
+            "Beep",
+            "Pop"
+          ],
+          "default": "pop.wav",
+          "description": "Selected Audio File"
+        },
+        "audible-save.notification": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show popup when user saves"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.91.0",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.11.0",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "node-wav-player": "^0.2.0"
+  }
+}
