@@ -11,7 +11,7 @@ Uses a modified version of node-wav-player
 
 ## Release Notes
 
-## 0.0.3
+### 0.0.3
 - Added Repository
 
 ### 0.0.1 
