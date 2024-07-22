@@ -4,6 +4,10 @@
   "description": "Play an audio file when user saves.",
   "version": "0.0.1",
   "publisher": "AMx2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amx2/audible-save"
+  },
   "engines": {
     "vscode": "^1.91.0"
   },
