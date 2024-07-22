@@ -1,6 +1,6 @@
 # audible-save README
 
-A small extension that lets you play an audio file on save.
+A small visual studio code extension that lets you play an audio file on save.
 
 ## Features
 
