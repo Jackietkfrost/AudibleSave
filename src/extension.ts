@@ -84,7 +84,7 @@ export function activate(context: vscode.ExtensionContext) {
 	// Functionality
 	function playAudio() {
 		const audioPath = path.join(context.extensionPath, 'audio', `${selectedAudioFile}`);
-		player.play({ path: audioPath }).catch((error) => {
+		player.play({ path: audioPath }).catch((error: any) => {
 			console.error(`The file ${audioPath} was not found. Error:${error}`);
 			vscode.window.showErrorMessage(`The file ${audioPath} was not found. Error:${error}`);
 		});
