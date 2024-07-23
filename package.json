@@ -45,13 +45,15 @@
             "that_was_easy.wav",
             "peon-work-complete.wav",
             "beep.wav",
-            "pop.wav"
+            "pop.wav",
+            "custom"
           ],
           "enumItemLabels": [
             "that_was_easy",
             "peon-work-complete",
             "Beep",
-            "Pop"
+            "Pop",
+            "Custom Audio File."
           ],
           "default": "pop.wav",
           "description": "Selected Audio File"
@@ -60,6 +62,11 @@
           "type": "boolean",
           "default": true,
           "description": "Show popup when user saves"
+        },
+        "audible-save.customAudio": {
+          "type": "string",
+          "default": "",
+          "description": "Audio file name to play (Note: add it's extension)"
         }
       }
     }
