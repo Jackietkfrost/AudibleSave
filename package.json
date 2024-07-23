@@ -2,7 +2,7 @@
   "name": "audible-save",
   "displayName": "Audible Save",
   "description": "Play an audio file when user saves.",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "publisher": "AMx2",
   "repository": {
     "type": "git",
